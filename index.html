@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Build a Todo List application using JavaScript DOM manipulation and Local Storage.
+    The application should allow users to add, update, delete, and view todos.
+    Each todo should include a checkbox to mark it as completed or incomplete, and all data should be saved in Local Storage so it persists after the page is refreshed.-->
+
+    <main class="container">
+        <header class = "header">
+            <h1>Todo List</h1>
+            <p>Stay Organized. Stay Productive.</p>
+        </header>
+
+        <section class="todo-input-section">
+
+            <form id="todoForm">
+                <input type="text" id="todoInput" placeholder="Enter a new task..." autocomplete="off" required>
+                <button type="submit" id="addbtn">Add Task</button>
+            </form>
+
+        </section>
+
+        <section class="todo-stats">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </section>
+
+        <section class="todo-section">
+            <h2>My tasks</h2>
+            <ul id="todoList">
+
+            </ul>
+        </section>
+
+        <section id="emptyState">
+            <div class="empty-icon">
+
+            </div>
+
+            <p>
+                No tasks yet.
+                <br>
+                Start by adding your first task.
+            </p>
+
+        </section>    
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
