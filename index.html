@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODOList</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Build a Todo List application using JavaScript DOM manipulation and Local Storage.
@@ -29,16 +30,20 @@
         <section class="todo-stats">
 
             <div class="stat-card">
+                <i class="fa-solid fa-list-check stat-icon total-icon"></i>
                 <h3>Total Tasks</h3>
                 <p id="totalTasks">0</p>
             </div>
 
             <div class="stat-card">
+                <i class="fa-solid fa-circle-check stat-icon completed-icon"></i>
+                
                 <h3>Completed</h3>
                 <p id="completedTasks">0</p>
             </div>
 
             <div class="stat-card">
+                <i class="fa-solid fa-hourglass-half stat-icon pending-icon"></i>
                 <h3>Pending</h3>
                 <p id="pendingTasks">0</p>
             </div>
@@ -46,7 +51,10 @@
         </section>
 
         <section class="todo-section">
-            <h2>My tasks</h2>
+            <div class="task-heading">
+    <i class="fa-solid fa-clipboard-list"></i>
+    <h2>My Tasks</h2>
+</div>
             <ul id="todoList">
 
             </ul>
